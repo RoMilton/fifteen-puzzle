@@ -1,0 +1,82 @@
+$app-width: 500px;
+$border-radius: 5px;
+
+//colors
+$col-grey-main: #ddddde;
+$col-grey-dark: #556;
+$col-green: #54BABA;
+$col-white: #fff;
+$col-blue-main: #a0b3d0;
+$col-blue-dark: #738298;
+
+.app {
+    max-width: 500px;
+    margin: 30px auto 0;
+    background-color: $col-grey-main;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-radius: $border-radius;
+    font-family: 'Open Sans', sans-serif;
+    color: $col-grey-dark; 
+    letter-spacing: 0.02px;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.main {
+	margin-bottom: 20px;
+}
+
+.footer {
+	text-align: center;
+}
+
+.heading-1 {
+	margin: 0;
+	font-size: 26px;
+}
+
+// generic button
+.button {
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: $border-radius;
+	color: $col-white;
+	background-color: $col-grey-dark;
+	margin: 0 5px;
+
+	&--green {
+		background-color: $col-green;
+		&:hover {
+			background-color: darken($col-green, 10%);
+		}
+	}
+}
+
+// grid of tiles
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid $col-blue-dark;
+	cursor: pointer;
+
+	// each tile
+	&__tile {
+		text-align: center;
+		box-sizing: border-box;
+		padding: 24px 10px;
+		background: $col-blue-main;
+		color: white;
+		border: 1px solid $col-blue-dark;
+		font-size: 33px;
+
+		&--empty {
+			background-color: transparent;
+			color: rgba(0,0,0,0);
+		}
+	}
+}
