@@ -11,3 +11,5 @@ First install the node packages:
 Then get a local server running:
 
     npm run dev
+    
+Go to http://localhost:8080/ to see game
